@@ -1,9 +1,10 @@
 /* converters.js */
-function celsiusToFahrenheit(celsius) {
-    return celsius * (9/5) + 32;
+function calculaIdade(anoNasc) {
+    return 2022 - anoNasc;
   }
-  module.exports.celsiusToFahrenheit = celsiusToFahrenheit;
+  module.exports.calculaIdade = calculaIdade;
   //*************************************** */
-  module.exports.fahrenheitToCelsius = function(fahrenheit) {
-    return (fahrenheit - 32) * (5/9);
+
+  module.exports.calculaIMC = function(peso , altura) {
+    return peso / (altura*altura);  
   };
